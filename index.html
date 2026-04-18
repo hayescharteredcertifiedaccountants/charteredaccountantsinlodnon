@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hayes Chartered Certified Accountants And Tax Consultants | Cheap Accountants In London</title>
+<meta name="description" content="Hayes Chartered Certified Accountants and Tax Consultants in London. Expert accounting, tax advisory, bookkeeping, VAT, payroll and more. Affordable accountants for individuals and businesses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0a1628;
+    --navy-mid: #12213d;
+    --navy-light: #1a2f52;
+    --gold: #c9a84c;
+    --gold-light: #e8c96d;
+    --gold-pale: #f5e8c0;
+    --cream: #faf7f0;
+    --white: #ffffff;
+    --text-dark: #0a1628;
+    --text-mid: #3a4a62;
+    --text-light: #8a9ab2;
+    --red: #e74c3c;
+    --green: #27ae60;
+    --border: rgba(201,168,76,0.2);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--white);
+    color: var(--text-dark);
+    overflow-x: hidden;
+  }
+
+  /* ── TOP BAR ── */
+  .topbar {
+    background: var(--navy);
+    padding: 8px 0;
+    border-bottom: 1px solid var(--gold);
+  }
+  .topbar-inner {
+    max-width: 1200px; margin: 0 auto; padding: 0 24px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 6px;
+  }
+  .topbar a {
+    color: var(--gold-light); font-size: 13px; text-decoration: none;
+    display: flex; align-items: center; gap: 5px; transition: color .2s;
+  }
+  .topbar a:hover { color: var(--white); }
+  .topbar .sep { color: rgba(201,168,76,0.35); font-size: 12px; }
+  .topbar .left, .topbar .right { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .topbar .book-btn {
+    background: var(--gold); color: var(--navy) !important;
+    padding: 4px 14px; border-radius: 4px; font-weight: 600; font-size: 12px;
+  }
+  .topbar .book-btn:hover { background: var(--gold-light); color: var(--navy) !important; }
+
+  /* ── NAV ── */
+  nav {
+    background: var(--white);
+    box-shadow: 0 2px 20px rgba(10,22,40,0.08);
+    position: sticky; top: 0; z-index: 1000;
+  }
+  .nav-inner {
+    max-width: 1200px; margin: 0 auto; padding: 0 24px;
+    display: flex; justify-content: space-between; align-items: center;
+    height: 70px;
+  }
+  .logo {
+    display: flex; align-items: center; gap: 10px; text-decoration: none;
+  }
+  .logo-mark {
+    width: 44px; height: 44px; background: var(--navy);
+    border-radius: 6px; display: flex; align-items: center; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .logo-mark::before {
+    content: 'H'; color: var(--gold); font-family: 'Playfair Display', serif;
+    font-size: 26px; font-weight: 900; line-height: 1;
+  }
+  .logo-text { display: flex; flex-direction: column; }
+  .logo-text .name {
+    font-family: 'Playfair Display', serif; font-weight: 700;
+    font-size: 17px; color: var(--navy); line-height: 1.1;
+  }
+  .logo-text .tagline { font-size: 10px; color: var(--gold); font-weight: 500; letter-spacing: .5px; text-transform: uppercase; }
+
+  .nav-links { display: flex; align-items: center; gap: 4px; list-style: none; }
+  .nav-links > li { position: relative; }
+  .nav-links > li > a {
+    display: block; padding: 10px 13px; font-size: 14px; font-weight: 500;
+    color: var(--text-dark); text-decoration: none; transition: color .2s;
+    white-space: nowrap;
+  }
+  .nav-links > li > a:hover { color: var(--gold); }
+  .nav-links > li.has-drop > a::after {
+    content: ' ▾'; font-size: 10px;
+  }
+  .dropdown {
+    display: none; position: absolute; top: 100%; left: 0; min-width: 260px;
+    background: var(--white); border-top: 2px solid var(--gold);
+    box-shadow: 0 12px 40px rgba(10,22,40,0.15); border-radius: 0 0 8px 8px;
+    padding: 8px 0; z-index: 200;
+  }
+  .dropdown a {
+    display: block; padding: 9px 20px; font-size: 13.5px; color: var(--text-mid);
+    text-decoration: none; transition: background .15s, color .15s;
+    border-left: 3px solid transparent;
+  }
+  .dropdown a:hover { background: var(--cream); color: var(--navy); border-left-color: var(--gold); }
+  .nav-links > li.has-drop:hover .dropdown { display: block; }
+  .sub-dropdown { position: relative; }
+  .sub-dropdown > a::after { content: ' ›'; float: right; }
+  .sub-dropdown .dropdown { left: 100%; top: -8px; border-top: none; border-left: 2px solid var(--gold); }
+  .sub-dropdown:hover .dropdown { display: block; }
+
+  .nav-cta {
+    background: var(--navy); color: var(--white) !important; padding: 9px 18px !important;
+    border-radius: 6px; font-weight: 600 !important; transition: background .2s !important;
+  }
+  .nav-cta:hover { background: var(--gold) !important; color: var(--navy) !important; }
+
+  /* HAMBURGER */
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+  .hamburger span { width: 24px; height: 2px; background: var(--navy); border-radius: 2px; transition: all .3s; }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 60%, #1e3a6e 100%);
+    position: relative; overflow: hidden; padding: 90px 24px 80px;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 80% 20%, rgba(201,168,76,0.12) 0%, transparent 60%),
+                radial-gradient(ellipse at 10% 80%, rgba(201,168,76,0.08) 0%, transparent 50%);
+  }
+  .hero-grid {
+    max-width: 1200px; margin: 0 auto; display: grid;
+    grid-template-columns: 1fr 420px; gap: 60px; align-items: center; position: relative;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.4);
+    color: var(--gold-light); font-size: 12px; font-weight: 600; letter-spacing: 1px;
+    text-transform: uppercase; padding: 6px 14px; border-radius: 40px; margin-bottom: 22px;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(32px, 4vw, 52px);
+    color: var(--white); line-height: 1.12; margin-bottom: 14px;
+  }
+  .hero h1 em { color: var(--gold-light); font-style: normal; }
+  .hero h2 { font-size: 18px; font-weight: 400; color: rgba(255,255,255,0.7); margin-bottom: 20px; }
+  .hero p { color: rgba(255,255,255,0.65); font-size: 15.5px; line-height: 1.7; margin-bottom: 34px; max-width: 540px; }
+  .hero-links { margin-bottom: 28px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hero-links a {
+    color: var(--gold-light); font-size: 13px; font-weight: 500;
+    text-decoration: underline; text-underline-offset: 2px; transition: color .2s;
+  }
+  .hero-links a:hover { color: var(--white); }
+  .hero-links .sep { color: rgba(201,168,76,0.4); }
+  .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--gold); color: var(--navy); padding: 14px 28px;
+    border-radius: 6px; font-weight: 700; font-size: 15px; text-decoration: none;
+    transition: all .25s; display: inline-block;
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,168,76,0.35); }
+  .btn-outline {
+    border: 2px solid rgba(255,255,255,0.35); color: var(--white);
+    padding: 13px 26px; border-radius: 6px; font-weight: 600; font-size: 15px;
+    text-decoration: none; transition: all .25s; display: inline-block;
+  }
+  .btn-outline:hover { border-color: var(--gold); color: var(--gold-light); }
+
+  .hero-card {
+    background: rgba(255,255,255,0.06); backdrop-filter: blur(12px);
+    border: 1px solid rgba(201,168,76,0.25); border-radius: 16px; padding: 34px;
+  }
+  .hero-card h3 {
+    font-family: 'Playfair Display', serif; color: var(--white); font-size: 20px;
+    margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid rgba(201,168,76,0.25);
+  }
+  .quick-links { list-style: none; }
+  .quick-links li { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .quick-links li:last-child { border-bottom: none; }
+  .quick-links a {
+    display: flex; align-items: center; gap: 10px;
+    color: rgba(255,255,255,0.8); text-decoration: none; font-size: 14px; font-weight: 500;
+    transition: color .2s;
+  }
+  .quick-links a:hover { color: var(--gold-light); }
+  .quick-links .icon { color: var(--gold); font-size: 16px; width: 20px; text-align: center; }
+  .arrow { margin-left: auto; font-size: 12px; opacity: .5; }
+
+  /* ── STATS ── */
+  .stats {
+    background: var(--gold); padding: 36px 24px;
+  }
+  .stats-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center;
+  }
+  .stat-item .number {
+    font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 900;
+    color: var(--navy); line-height: 1;
+  }
+  .stat-item .label { font-size: 13px; font-weight: 600; color: var(--navy-light); margin-top: 4px; }
+
+  /* ── SECTION STYLES ── */
+  .section { padding: 80px 24px; }
+  .section-alt { background: var(--cream); }
+  .container { max-width: 1200px; margin: 0 auto; }
+  .section-header { text-align: center; margin-bottom: 54px; }
+  .section-tag {
+    display: inline-block; background: var(--gold-pale); color: var(--gold);
+    border: 1px solid var(--gold); font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+    text-transform: uppercase; padding: 5px 14px; border-radius: 40px; margin-bottom: 16px;
+  }
+  .section-header h2 {
+    font-family: 'Playfair Display', serif; font-size: clamp(26px, 3.5vw, 40px);
+    font-weight: 700; color: var(--navy); margin-bottom: 14px;
+  }
+  .section-header p { font-size: 16px; color: var(--text-mid); max-width: 600px; margin: 0 auto; line-height: 1.7; }
+
+  /* ── WHO WE HELP ── */
+  .help-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 22px; }
+  .help-card {
+    background: var(--white); border: 1px solid #e8edf3; border-radius: 12px;
+    padding: 28px 24px; transition: all .25s; position: relative; overflow: hidden;
+  }
+  .help-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: var(--gold); transform: scaleX(0); transform-origin: left;
+    transition: transform .3s;
+  }
+  .help-card:hover { border-color: var(--gold); box-shadow: 0 8px 32px rgba(10,22,40,0.1); transform: translateY(-4px); }
+  .help-card:hover::before { transform: scaleX(1); }
+  .help-icon { font-size: 30px; margin-bottom: 14px; }
+  .help-card h3 { font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 8px; }
+  .help-card p { font-size: 13.5px; color: var(--text-mid); line-height: 1.6; margin-bottom: 14px; }
+  .help-card a { color: var(--gold); font-size: 13px; font-weight: 600; text-decoration: none; }
+  .help-card a:hover { text-decoration: underline; }
+
+  /* ── SERVICES ── */
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+  .service-card {
+    background: var(--white); border-radius: 12px; border: 1px solid #e8edf3;
+    padding: 28px; transition: all .25s;
+    display: flex; flex-direction: column;
+  }
+  .service-card:hover { box-shadow: 0 12px 40px rgba(10,22,40,0.12); border-color: rgba(201,168,76,0.5); transform: translateY(-4px); }
+  .service-num {
+    font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 900;
+    color: var(--gold-pale); line-height: 1; margin-bottom: 12px;
+  }
+  .service-card h3 { font-size: 17px; font-weight: 600; color: var(--navy); margin-bottom: 10px; }
+  .service-card p { font-size: 14px; color: var(--text-mid); line-height: 1.65; flex: 1; margin-bottom: 18px; }
+  .service-card a { color: var(--gold); font-size: 13.5px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; }
+  .service-card a:hover { text-decoration: underline; }
+
+  /* ── MTD SECTION ── */
+  .mtd-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+  .mtd-content h2 {
+    font-family: 'Playfair Display', serif; font-size: clamp(24px, 3vw, 36px);
+    font-weight: 700; color: var(--navy); margin-bottom: 16px;
+  }
+  .mtd-content p { font-size: 15.5px; color: var(--text-mid); line-height: 1.7; margin-bottom: 28px; }
+  .mtd-steps { list-style: none; }
+  .mtd-steps li {
+    display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid #eef0f4;
+    align-items: flex-start;
+  }
+  .mtd-steps li:last-child { border-bottom: none; }
+  .step-num {
+    width: 36px; height: 36px; background: var(--navy); color: var(--gold);
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif; font-weight: 700; font-size: 14px;
+    flex-shrink: 0;
+  }
+  .step-text h4 { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 4px; }
+  .step-text p { font-size: 13.5px; color: var(--text-mid); line-height: 1.55; }
+  .mtd-visual {
+    background: var(--navy); border-radius: 16px; padding: 40px;
+    position: relative; overflow: hidden;
+  }
+  .mtd-visual::before {
+    content: ''; position: absolute; top: -40px; right: -40px;
+    width: 180px; height: 180px; background: var(--gold); opacity: .06; border-radius: 50%;
+  }
+  .mtd-visual h3 {
+    font-family: 'Playfair Display', serif; color: var(--gold-light);
+    font-size: 22px; margin-bottom: 24px;
+  }
+  .mtd-stat { margin-bottom: 20px; }
+  .mtd-stat-label { font-size: 12px; color: rgba(255,255,255,0.5); margin-bottom: 6px; letter-spacing: .5px; }
+  .mtd-stat-bar { height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden; }
+  .mtd-stat-fill { height: 100%; background: linear-gradient(90deg, var(--gold), var(--gold-light)); border-radius: 3px; }
+  .mtd-stat-value { font-size: 24px; font-weight: 700; color: var(--white); margin-top: 6px; }
+
+  /* ── WHY CHOOSE US ── */
+  .why-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 24px; }
+  .why-card {
+    background: var(--white); border-radius: 12px; padding: 28px;
+    border: 1px solid #e8edf3; text-align: center; transition: all .25s;
+  }
+  .why-card:hover { box-shadow: 0 8px 28px rgba(10,22,40,0.1); border-color: var(--gold); transform: translateY(-3px); }
+  .why-icon {
+    width: 60px; height: 60px; background: var(--gold-pale);
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-size: 26px; margin: 0 auto 16px;
+  }
+  .why-card h3 { font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 8px; }
+  .why-card p { font-size: 13.5px; color: var(--text-mid); line-height: 1.6; }
+
+  /* ── REVIEWS ── */
+  .reviews-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 22px; }
+  .review-card {
+    background: var(--white); border-radius: 12px; padding: 26px;
+    border: 1px solid #e8edf3; transition: box-shadow .2s;
+  }
+  .review-card:hover { box-shadow: 0 8px 28px rgba(10,22,40,0.1); }
+  .stars { color: #f5c518; font-size: 16px; margin-bottom: 12px; letter-spacing: 2px; }
+  .review-text { font-size: 14px; color: var(--text-mid); line-height: 1.65; margin-bottom: 16px; font-style: italic; }
+  .review-author { display: flex; align-items: center; gap: 12px; }
+  .avatar {
+    width: 40px; height: 40px; border-radius: 50%; background: var(--navy);
+    color: var(--gold); display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 15px;
+  }
+  .author-name { font-weight: 600; font-size: 14px; color: var(--navy); }
+  .author-date { font-size: 12px; color: var(--text-light); }
+
+  /* ── STEPS ── */
+  .steps-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 32px; }
+  .step-card { text-align: center; }
+  .step-circle {
+    width: 80px; height: 80px; background: var(--navy); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;
+    border: 3px solid var(--gold); position: relative;
+  }
+  .step-circle .num {
+    font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 900; color: var(--gold);
+  }
+  .step-card h3 { font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+  .step-card p { font-size: 14.5px; color: var(--text-mid); line-height: 1.65; }
+
+  /* ── FAQ ── */
+  .faq-list { max-width: 800px; margin: 0 auto; }
+  .faq-item { border-bottom: 1px solid #e8edf3; }
+  .faq-q {
+    width: 100%; text-align: left; padding: 20px 0; background: none; border: none;
+    font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 600; color: var(--navy);
+    cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  }
+  .faq-q .chevron { font-size: 20px; color: var(--gold); flex-shrink: 0; transition: transform .3s; }
+  .faq-q.open .chevron { transform: rotate(180deg); }
+  .faq-a { font-size: 14.5px; color: var(--text-mid); line-height: 1.7; padding: 0 0 20px; display: none; }
+  .faq-a a { color: var(--gold); }
+
+  /* ── CONTACT ── */
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+  .contact-info h2 {
+    font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 700;
+    color: var(--navy); margin-bottom: 16px;
+  }
+  .contact-info p { font-size: 15.5px; color: var(--text-mid); line-height: 1.7; margin-bottom: 30px; }
+  .contact-item {
+    display: flex; gap: 14px; align-items: flex-start;
+    padding: 16px 0; border-bottom: 1px solid #eef0f4;
+  }
+  .contact-item:last-child { border-bottom: none; }
+  .contact-icon {
+    width: 44px; height: 44px; background: var(--gold-pale); border-radius: 10px;
+    display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;
+  }
+  .contact-item-text .label { font-size: 11px; font-weight: 700; color: var(--text-light); text-transform: uppercase; letter-spacing: .8px; }
+  .contact-item-text a, .contact-item-text span {
+    display: block; font-size: 15px; font-weight: 600; color: var(--navy); text-decoration: none; margin-top: 2px;
+  }
+  .contact-item-text a:hover { color: var(--gold); }
+  .contact-form { background: var(--cream); border-radius: 16px; padding: 36px; }
+  .contact-form h3 {
+    font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700;
+    color: var(--navy); margin-bottom: 24px;
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group { margin-bottom: 18px; }
+  .form-group label { display: block; font-size: 13px; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%; padding: 12px 14px; border: 1.5px solid #dde3ed; border-radius: 8px;
+    font-family: 'DM Sans', sans-serif; font-size: 14px; color: var(--text-dark);
+    background: var(--white); transition: border-color .2s; outline: none;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--gold); }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+  .form-submit {
+    width: 100%; padding: 14px; background: var(--navy); color: var(--white);
+    border: none; border-radius: 8px; font-family: 'DM Sans', sans-serif;
+    font-size: 15px; font-weight: 700; cursor: pointer; transition: background .2s;
+  }
+  .form-submit:hover { background: var(--gold); color: var(--navy); }
+
+  /* ── LOCATION STRIP ── */
+  .locations { background: var(--navy); padding: 24px; }
+  .locations-inner { max-width: 1200px; margin: 0 auto; text-align: center; }
+  .locations-inner h4 { color: var(--gold-light); font-size: 14px; font-weight: 600; margin-bottom: 12px; }
+  .location-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+  .location-tags a {
+    color: rgba(255,255,255,0.7); font-size: 13px; text-decoration: none;
+    transition: color .2s;
+  }
+  .location-tags a:hover { color: var(--gold-light); }
+  .location-tags .sep { color: rgba(201,168,76,0.3); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy-mid); padding: 60px 24px 0;
+    border-top: 3px solid var(--gold);
+  }
+  .footer-grid {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px;
+  }
+  .footer-brand .logo { margin-bottom: 16px; }
+  .footer-brand .logo-text .name { color: var(--white); }
+  .footer-brand p { font-size: 14px; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 22px; }
+  .social-links { display: flex; gap: 10px; }
+  .social-link {
+    width: 40px; height: 40px; border-radius: 8px; border: 1px solid rgba(201,168,76,0.3);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--gold-light); font-size: 16px; text-decoration: none;
+    transition: all .2s;
+  }
+  .social-link:hover { background: var(--gold); color: var(--navy); border-color: var(--gold); }
+  .footer-col h4 {
+    font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 18px;
+  }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 10px; }
+  .footer-col ul li a {
+    color: rgba(255,255,255,0.6); font-size: 13.5px; text-decoration: none; transition: color .2s;
+  }
+  .footer-col ul li a:hover { color: var(--gold-light); }
+  .footer-bottom {
+    border-top: 1px solid rgba(201,168,76,0.15); padding: 20px 0;
+    max-width: 1200px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+  }
+  .footer-bottom p { color: rgba(255,255,255,0.4); font-size: 13px; }
+  .footer-bottom a { color: rgba(201,168,76,0.7); text-decoration: none; }
+  .footer-bottom a:hover { color: var(--gold-light); }
+
+  /* ── ACCA STRIP ── */
+  .accreditations { background: #f4f6fa; padding: 30px 24px; }
+  .accreditations-inner { max-width: 1200px; margin: 0 auto; text-align: center; }
+  .accreditations-inner h4 { font-size: 13px; color: var(--text-light); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 20px; }
+  .badges { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+  .badge {
+    background: var(--white); border: 1px solid #e0e5ee; border-radius: 8px;
+    padding: 10px 22px; font-size: 13px; font-weight: 700; color: var(--text-mid);
+    letter-spacing: .5px;
+  }
+
+  /* ── MOBILE MENU ── */
+  .mobile-menu {
+    display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--navy); z-index: 2000; padding: 24px; overflow-y: auto;
+    flex-direction: column;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; }
+  .mobile-close { background: none; border: none; color: var(--gold); font-size: 28px; cursor: pointer; }
+  .mobile-nav-links { list-style: none; }
+  .mobile-nav-links > li { border-bottom: 1px solid rgba(201,168,76,0.15); }
+  .mobile-nav-links > li > a {
+    display: block; padding: 14px 0; color: var(--white); font-size: 16px;
+    font-weight: 600; text-decoration: none;
+  }
+  .mobile-sub { list-style: none; padding: 0 0 12px 16px; }
+  .mobile-sub li { padding: 7px 0; }
+  .mobile-sub a { color: rgba(255,255,255,0.7); font-size: 14px; text-decoration: none; }
+  .mobile-sub a:hover { color: var(--gold-light); }
+  .mobile-social { display: flex; gap: 12px; margin-top: 30px; }
+
+  @media (max-width: 900px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-card { display: none; }
+    .stats-inner { grid-template-columns: repeat(2, 1fr); }
+    .mtd-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .steps-grid { grid-template-columns: 1fr; gap: 24px; }
+  }
+  @media (max-width: 580px) {
+    .stats-inner { grid-template-columns: repeat(2,1fr); }
+    .footer-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .topbar .left { display: none; }
+  }
+
+  /* Animate on scroll */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+</style>
+</head>
+<body>
+
+<!-- ══ TOP BAR ══ -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="left">
+      <a href="tel:02086460800">📞 020 8646 0800</a>
+      <span class="sep">|</span>
+      <a href="https://wa.me/447429584191">💬 WhatsApp: 07429 584191</a>
+      <span class="sep">|</span>
+      <a href="mailto:info@hayes-accountants.co.uk">✉ info@hayes-accountants.co.uk</a>
+    </div>
+    <div class="right">
+      <a href="https://hayes-accountants.co.uk/request-an-appointment" class="book-btn" target="_blank">📅 Book Appointment</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <div class="logo-mark"></div>
+      <div class="logo-text">
+        <span class="name">Hayes Accountants</span>
+        <span class="tagline">Chartered Certified Accountants</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li class="has-drop">
+        <a href="#">Who We Help</a>
+        <div class="dropdown">
+          <div class="sub-dropdown">
+            <a href="https://hayes-accountants.co.uk/accountants-for-individuals/" target="_blank">Accountants for Individuals</a>
+            <div class="dropdown">
+              <a href="https://hayes-accountants.co.uk/accountants-for-self-employed/" target="_blank">Self-Employed</a>
+              <a href="https://hayes-accountants.co.uk/accountants-for-landlords/" target="_blank">Landlords</a>
+              <a href="https://hayes-accountants.co.uk/accountants-for-investors/" target="_blank">Investors</a>
+              <a href="https://hayes-accountants.co.uk/accountants-for-high-net-worth-individual/" target="_blank">High Net Worth Individuals</a>
+            </div>
+          </div>
+          <div class="sub-dropdown">
+            <a href="https://hayes-accountants.co.uk/accountants-for-limited-company/" target="_blank">Limited Company Accountants</a>
+            <div class="dropdown">
+              <a href="https://hayes-accountants.co.uk/accountants-for-small-business/" target="_blank">Small Business</a>
+              <a href="https://hayes-accountants.co.uk/startup-accountants/" target="_blank">Startups</a>
+              <a href="https://hayes-accountants.co.uk/contractor-accountants/" target="_blank">Contractors</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="has-drop">
+        <a href="https://hayes-accountants.co.uk/accounting-services/" target="_blank">Our Services</a>
+        <div class="dropdown">
+          <a href="https://hayes-accountants.co.uk/accounting-and-bookkeeping-services/" target="_blank">Accounting & Bookkeeping</a>
+          <a href="https://hayes-accountants.co.uk/vat-return-services-in-uk/" target="_blank">VAT Return</a>
+          <a href="https://hayes-accountants.co.uk/payroll-service/" target="_blank">Payroll Services</a>
+          <a href="https://hayes-accountants.co.uk/pension-auto-enrolment-accounting-services/" target="_blank">Pension Auto Enrolment</a>
+          <a href="https://hayes-accountants.co.uk/company-year-end-accounts-services/" target="_blank">Year End Accounts</a>
+          <a href="https://hayes-accountants.co.uk/self-assessment-tax-return-services/" target="_blank">Self-Assessment Tax Return</a>
+          <a href="https://hayes-accountants.co.uk/corporation-tax-accounting-services/" target="_blank">Corporation Tax</a>
+          <a href="https://hayes-accountants.co.uk/capital-gains-tax-accounting-services/" target="_blank">Capital Gains Tax</a>
+          <a href="https://hayes-accountants.co.uk/tax-advisors-in-uk-tax-advisory/" target="_blank">Tax Advisory</a>
+          <a href="https://hayes-accountants.co.uk/company-formation-services/" target="_blank">Company Formation</a>
+          <a href="https://hayes-accountants.co.uk/accounting-services/making-tax-digital-mtd-accountants/" target="_blank">Making Tax Digital (MTD)</a>
+          <a href="https://hayes-accountants.co.uk/landlord-taxation-landlord-accountants/" target="_blank">Landlord Taxation</a>
+          <a href="https://hayes-accountants.co.uk/tax-rebate-tax-refund-services/" target="_blank">Tax Rebate & Refund</a>
+          <a href="https://hayes-accountants.co.uk/construction-industry-scheme-personals-cis-tax-returns/" target="_blank">CIS Tax Returns</a>
+          <a href="https://hayes-accountants.co.uk/cash-flow-management/" target="_blank">Cash Flow Management</a>
+          <a href="https://hayes-accountants.co.uk/budgeting-and-forecasting-services/" target="_blank">Budgeting & Forecasting</a>
+          <a href="https://hayes-accountants.co.uk/management-accounts-services/" target="_blank">Management Accounts</a>
+          <a href="https://hayes-accountants.co.uk/registered-address-services/" target="_blank">Registered Address</a>
+          <a href="https://hayes-accountants.co.uk/company-secretarial-services/" target="_blank">Company Secretarial</a>
+        </div>
+      </li>
+      <li><a href="https://hayes-accountants.co.uk/blogs/" target="_blank">Blogs</a></li>
+      <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="openMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <a href="#" class="logo">
+      <div class="logo-mark"></div>
+      <div class="logo-text">
+        <span class="name" style="color:var(--white)">Hayes Accountants</span>
+      </div>
+    </a>
+    <button class="mobile-close" onclick="closeMenu()">✕</button>
+  </div>
+  <ul class="mobile-nav-links">
+    <li><a href="#" onclick="closeMenu()">Home</a></li>
+    <li><a href="#about" onclick="closeMenu()">About Us</a></li>
+    <li>
+      <a href="#">Who We Help</a>
+      <ul class="mobile-sub">
+        <li><a href="https://hayes-accountants.co.uk/accountants-for-self-employed/" target="_blank">Self-Employed</a></li>
+        <li><a href="https://hayes-accountants.co.uk/accountants-for-landlords/" target="_blank">Landlords</a></li>
+        <li><a href="https://hayes-accountants.co.uk/accountants-for-investors/" target="_blank">Investors</a></li>
+        <li><a href="https://hayes-accountants.co.uk/accountants-for-limited-company/" target="_blank">Limited Companies</a></li>
+        <li><a href="https://hayes-accountants.co.uk/startup-accountants/" target="_blank">Startups</a></li>
+        <li><a href="https://hayes-accountants.co.uk/contractor-accountants/" target="_blank">Contractors</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="https://hayes-accountants.co.uk/accounting-services/" target="_blank">Our Services</a>
+      <ul class="mobile-sub">
+        <li><a href="https://hayes-accountants.co.uk/accounting-and-bookkeeping-services/" target="_blank">Accounting & Bookkeeping</a></li>
+        <li><a href="https://hayes-accountants.co.uk/vat-return-services-in-uk/" target="_blank">VAT Return</a></li>
+        <li><a href="https://hayes-accountants.co.uk/payroll-service/" target="_blank">Payroll Services</a></li>
+        <li><a href="https://hayes-accountants.co.uk/self-assessment-tax-return-services/" target="_blank">Self-Assessment Tax Return</a></li>
+        <li><a href="https://hayes-accountants.co.uk/corporation-tax-accounting-services/" target="_blank">Corporation Tax</a></li>
+      </ul>
+    </li>
+    <li><a href="https://hayes-accountants.co.uk/blogs/" target="_blank">Blogs</a></li>
+    <li><a href="#contact" onclick="closeMenu()">Contact Us</a></li>
+  </ul>
+  <div class="mobile-social">
+    <a href="https://www.facebook.com/hayesaccountantslondon" class="social-link" target="_blank">f</a>
+    <a href="https://www.instagram.com/hayesaccountantsltd/" class="social-link" target="_blank">📸</a>
+    <a href="https://x.com/HayesCCA" class="social-link" target="_blank">𝕏</a>
+    <a href="https://www.linkedin.com/company/hayes-accountants-london" class="social-link" target="_blank">in</a>
+  </div>
+</div>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-badge">⭐ 5-Star Google Rated · London's Trusted Accountants</div>
+      <h1><a href="https://hayes-accountants.co.uk/chartered-certified-accountants-in-london/" target="_blank" style="color:inherit;text-decoration:none;">Hayes Chartered Certified Accountants<br>And <em>Tax Consultants</em></a></h1>
+      <h2>Less Tax Stress, More Business Success.</h2>
+      <p>Your trusted partner for accounting, tax advisory, and financial compliance throughout the UK. We serve individuals, small businesses, limited companies, landlords, contractors, and more — all at <a href="https://hayes-accountants.co.uk/cheap-accountants/" target="_blank" style="color:var(--gold-light);font-weight:600;text-decoration:underline;">affordable, transparent rates</a>.</p>
+      <div class="hero-links">
+        <a href="https://hayes-accountants.co.uk/chartered-certified-accountants-in-london/" target="_blank">Hayes Chartered Certified Accountants and Tax Consultants</a>
+        <span class="sep">|</span>
+        <a href="https://hayes-accountants.co.uk/cheap-accountants/" target="_blank">Cheap Accountants in London</a>
+      </div>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">Get Free Consultation</a>
+        <a href="https://hayes-accountants.co.uk/accounting-services/" target="_blank" class="btn-outline">View All Services</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>Quick Service Links</h3>
+      <ul class="quick-links">
+        <li><a href="https://hayes-accountants.co.uk/self-assessment-tax-return-services/" target="_blank"><span class="icon">📝</span> Self-Assessment Tax Return <span class="arrow">›</span></a></li>
+        <li><a href="https://hayes-accountants.co.uk/vat-return-services-in-uk/" target="_blank"><span class="icon">💷</span> VAT Return Services <span class="arrow">›</span></a></li>
+        <li><a href="https://hayes-accountants.co.uk/payroll-service/" target="_blank"><span class="icon">👥</span> Payroll Services <span class="arrow">›</span></a></li>
+        <li><a href="https://hayes-accountants.co.uk/company-formation-services/" target="_blank"><span class="icon">🏢</span> Company Formation <span class="arrow">›</span></a></li>
+        <li><a href="https://hayes-accountants.co.uk/construction-industry-scheme-personals-cis-tax-returns/" target="_blank"><span class="icon">🔧</span> CIS Tax Returns — from £39 <span class="arrow">›</span></a></li>
+        <li><a href="https://hayes-accountants.co.uk/landlord-taxation-landlord-accountants/" target="_blank"><span class="icon">🏠</span> Landlord Taxation — from £24/mo <span class="arrow">›</span></a></li>
+        <li><a href="https://hayes-accountants.co.uk/corporation-tax-accounting-services/" target="_blank"><span class="icon">📊</span> Corporation Tax <span class="arrow">›</span></a></li>
+        <li><a href="https://hayes-accountants.co.uk/accounting-services/making-tax-digital-mtd-accountants/" target="_blank"><span class="icon">💻</span> Making Tax Digital (MTD) <span class="arrow">›</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS ══ -->
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="number">100+</div>
+      <div class="label">Professional Accounting Staff</div>
+    </div>
+    <div class="stat-item">
+      <div class="number">30%</div>
+      <div class="label">Average Tax Savings</div>
+    </div>
+    <div class="stat-item">
+      <div class="number">15Y</div>
+      <div class="label">Average Years of Experience</div>
+    </div>
+    <div class="stat-item">
+      <div class="number">5K+</div>
+      <div class="label">Businesses Served</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ WHO WE HELP ══ -->
+<section class="section" id="who">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Who We Help</div>
+      <h2>Accountants for Every Client — Individuals & Businesses</h2>
+      <p>From self-employed freelancers to high net worth individuals, from startups to established limited companies — HCCA has you covered.</p>
+    </div>
+    <div class="help-grid">
+      <div class="help-card reveal">
+        <div class="help-icon">🧑‍💼</div>
+        <h3>Self-Employed</h3>
+        <p>Hassle-free tax returns and bookkeeping for sole traders and freelancers.</p>
+        <a href="https://hayes-accountants.co.uk/accountants-for-self-employed/" target="_blank">Learn More →</a>
+      </div>
+      <div class="help-card reveal">
+        <div class="help-icon">🏠</div>
+        <h3>Landlords</h3>
+        <p>Specialist landlord accountants managing property taxes and portfolios from £24/month.</p>
+        <a href="https://hayes-accountants.co.uk/accountants-for-landlords/" target="_blank">Learn More →</a>
+      </div>
+      <div class="help-card reveal">
+        <div class="help-icon">📈</div>
+        <h3>Investors</h3>
+        <p>Expert accounting for capital gains, investment portfolios, and financial planning.</p>
+        <a href="https://hayes-accountants.co.uk/accountants-for-investors/" target="_blank">Learn More →</a>
+      </div>
+      <div class="help-card reveal">
+        <div class="help-icon">💎</div>
+        <h3>High Net Worth Individuals</h3>
+        <p>Tailored, discreet tax and wealth planning for high net worth clients.</p>
+        <a href="https://hayes-accountants.co.uk/accountants-for-high-net-worth-individual/" target="_blank">Learn More →</a>
+      </div>
+      <div class="help-card reveal">
+        <div class="help-icon">🏢</div>
+        <h3>Limited Companies</h3>
+        <p>Full-service accounting for limited companies of all sizes in the UK.</p>
+        <a href="https://hayes-accountants.co.uk/accountants-for-limited-company/" target="_blank">Learn More →</a>
+      </div>
+      <div class="help-card reveal">
+        <div class="help-icon">🚀</div>
+        <h3>Startups</h3>
+        <p>Affordable, growth-focused accounting to help new businesses launch confidently.</p>
+        <a href="https://hayes-accountants.co.uk/startup-accountants/" target="_blank">Learn More →</a>
+      </div>
+      <div class="help-card reveal">
+        <div class="help-icon">🔨</div>
+        <h3>Contractors</h3>
+        <p>IR35 compliance, payroll, and financial planning for UK contractors.</p>
+        <a href="https://hayes-accountants.co.uk/contractor-accountants/" target="_blank">Learn More →</a>
+      </div>
+      <div class="help-card reveal">
+        <div class="help-icon">🛒</div>
+        <h3>Ecommerce & Amazon</h3>
+        <p>VAT, bookkeeping, and tax compliance for online sellers and Amazon businesses.</p>
+        <a href="https://hayes-accountants.co.uk/chartered-certified-accountants-in-london/accountants-for-ecommerce/" target="_blank">Learn More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ══ -->
+<section class="section section-alt" id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Our Services</div>
+      <h2>Complete Accounting & Tax Services in London UK</h2>
+      <p>From bookkeeping and VAT to payroll, corporation tax, and company formation — we cover every aspect of your financial needs.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-num">01</div>
+        <h3>Accounting & Bookkeeping</h3>
+        <p>Comprehensive bookkeeping and accounting services for businesses of all sizes across the UK, keeping your records accurate and compliant.</p>
+        <a href="https://hayes-accountants.co.uk/accounting-and-bookkeeping-services/" target="_blank">Learn More →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">02</div>
+        <h3>VAT Return Services</h3>
+        <p>We manage your VAT records, prepare submissions, and ensure full HMRC compliance so you never miss a filing deadline.</p>
+        <a href="https://hayes-accountants.co.uk/vat-return-services-in-uk/" target="_blank">Learn More →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">03</div>
+        <h3>Payroll Services</h3>
+        <p>Online payroll services personalised to your business, ensuring accurate and timely payments for employees across the UK.</p>
+        <a href="https://hayes-accountants.co.uk/payroll-service/" target="_blank">Learn More →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">04</div>
+        <h3>Pension Auto Enrolment</h3>
+        <p>We handle workplace pension compliance, protecting you from daily fines of up to £10,000 for non-compliance.</p>
+        <a href="https://hayes-accountants.co.uk/pension-auto-enrolment-accounting-services/" target="_blank">Learn More →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">05</div>
+        <h3>Year End Accounts</h3>
+        <p>Accurate year-end accounts filed on time with HMRC and Companies House — avoiding penalties and keeping directors compliant.</p>
+        <a href="https://hayes-accountants.co.uk/company-year-end-accounts-services/" target="_blank">Learn More →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">06</div>
+        <h3>Self-Assessment Tax Return</h3>
+        <p>Specialist self-assessment returns completed and submitted for you — hassle-free, fast, and great value.</p>
+        <a href="https://hayes-accountants.co.uk/self-assessment-tax-return-services/" target="_blank">Learn More →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">07</div>
+        <h3>CIS Tax Returns</h3>
+        <p>Construction Industry Scheme personal tax returns and refunds. Flat rate of just £39 including VAT.</p>
+        <a href="https://hayes-accountants.co.uk/construction-industry-scheme-personals-cis-tax-returns/" target="_blank">Learn More →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">08</div>
+        <h3>Tax Rebate & Refund</h3>
+        <p>Save and reclaim up to £2,000–£3,000 per year. We help self-employed, CIS, and PAYE workers claim what they're owed.</p>
+        <a href="https://hayes-accountants.co.uk/tax-rebate-tax-refund-services/" target="_blank">Learn More →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">09</div>
+        <h3>Capital Gains Tax</h3>
+        <p>Specialist CGT advice for property sales, share disposals, and other capital assets — tailored to your situation.</p>
+        <a href="https://hayes-accountants.co.uk/capital-gains-tax-accounting-services/" target="_blank">Learn More →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">10</div>
+        <h3>Corporation Tax</h3>
+        <p>Efficient corporation tax returns for limited companies — minimising your liability and ensuring you never miss HMRC deadlines.</p>
+        <a href="https://hayes-accountants.co.uk/corporation-tax-accounting-services/" target="_blank">Learn More →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">11</div>
+        <h3>Tax Advisory Services</h3>
+        <p>Comprehensive UK tax planning, investigation support, and strategic tax advice for individuals and businesses.</p>
+        <a href="https://hayes-accountants.co.uk/tax-advisors-in-uk-tax-advisory/" target="_blank">Learn More →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">12</div>
+        <h3>Company Formation</h3>
+        <p>We handle all legal paperwork and filing to get your new business registered quickly and correctly with Companies House.</p>
+        <a href="https://hayes-accountants.co.uk/company-formation-services/" target="_blank">Learn More →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">13</div>
+        <h3>Budgeting & Forecasting</h3>
+        <p>Sound financial planning to help you measure performance, plan for growth, and navigate uncertainty with confidence.</p>
+        <a href="https://hayes-accountants.co.uk/budgeting-and-forecasting-services/" target="_blank">Learn More →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">14</div>
+        <h3>Cash Flow Management</h3>
+        <p>Stay on top of your cash position with proactive cash flow projections and management tailored to your business.</p>
+        <a href="https://hayes-accountants.co.uk/cash-flow-management/" target="_blank">Learn More →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">15</div>
+        <h3>Management Accounts</h3>
+        <p>Regular management accounts giving you the financial clarity to make smarter, faster business decisions.</p>
+        <a href="https://hayes-accountants.co.uk/management-accounts-services/" target="_blank">Learn More →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">16</div>
+        <h3>Landlord Taxation</h3>
+        <p>From stamp duty to capital gains on sale — comprehensive landlord tax management starting at just £24/month.</p>
+        <a href="https://hayes-accountants.co.uk/landlord-taxation-landlord-accountants/" target="_blank">Learn More →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">17</div>
+        <h3>Registered Address Service</h3>
+        <p>A prestigious London registered address for your company — a legal requirement when incorporating in the UK.</p>
+        <a href="https://hayes-accountants.co.uk/registered-address-services/" target="_blank">Learn More →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">18</div>
+        <h3>Company Secretarial Services</h3>
+        <p>Full company secretary services ensuring corporate governance, legal compliance, and administrative duties are handled.</p>
+        <a href="https://hayes-accountants.co.uk/company-secretarial-services/" target="_blank">Learn More →</a>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="https://hayes-accountants.co.uk/accounting-services/" target="_blank" class="btn-primary">See All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MTD ══ -->
+<section class="section" id="mtd">
+  <div class="container">
+    <div class="mtd-grid">
+      <div class="mtd-content reveal">
+        <div class="section-tag">Making Tax Digital</div>
+        <h2>Complete MTD Services from Hayes Accountants</h2>
+        <p>We provide a full end-to-end Making Tax Digital service for sole traders, landlords, partnerships and businesses across London and the UK.</p>
+        <ul class="mtd-steps">
+          <li><div class="step-num">1</div><div class="step-text"><h4>MTD Eligibility Assessment & Registration</h4><p>We assess eligibility, confirm income thresholds and handle full HMRC registration.</p></div></li>
+          <li><div class="step-num">2</div><div class="step-text"><h4>MTD for VAT — Compliance & Filing</h4><p>We manage VAT records, submissions and ensure full compliance throughout the year.</p></div></li>
+          <li><div class="step-num">3</div><div class="step-text"><h4>MTD for Income Tax (ITSA)</h4><p>Full ITSA management including quarterly updates and final declarations.</p></div></li>
+          <li><div class="step-num">4</div><div class="step-text"><h4>Software Setup & Training</h4><p>Setup and training on leading accounting software platforms including Xero, QuickBooks, Zoho.</p></div></li>
+          <li><div class="step-num">5</div><div class="step-text"><h4>Quarterly Updates & Bookkeeping</h4><p>Cloud bookkeeping ensuring accurate digital records and timely quarterly submissions.</p></div></li>
+        </ul>
+        <div style="margin-top:28px;">
+          <a href="https://hayes-accountants.co.uk/accounting-services/making-tax-digital-mtd-accountants/" target="_blank" class="btn-primary">Get Help with MTD</a>
+        </div>
+      </div>
+      <div class="mtd-visual reveal">
+        <h3>Why MTD Matters</h3>
+        <div class="mtd-stat">
+          <div class="mtd-stat-label">BUSINESSES ALREADY ON MTD</div>
+          <div class="mtd-stat-bar"><div class="mtd-stat-fill" style="width:78%"></div></div>
+          <div class="mtd-stat-value">78%</div>
+        </div>
+        <div class="mtd-stat">
+          <div class="mtd-stat-label">ERROR REDUCTION WITH MTD</div>
+          <div class="mtd-stat-bar"><div class="mtd-stat-fill" style="width:65%"></div></div>
+          <div class="mtd-stat-value">65%</div>
+        </div>
+        <div class="mtd-stat">
+          <div class="mtd-stat-label">CLIENT SATISFACTION RATE</div>
+          <div class="mtd-stat-bar"><div class="mtd-stat-fill" style="width:99%"></div></div>
+          <div class="mtd-stat-value">99%</div>
+        </div>
+        <p style="color:rgba(255,255,255,0.6);font-size:13.5px;margin-top:24px;line-height:1.65;">
+          MTD is mandatory for VAT-registered businesses. From April 2026, it extends to income tax for those earning over £50,000. Don't get caught out — let us handle your transition.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section class="section section-alt" id="about">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+      <div class="reveal">
+        <div class="section-tag">About Hayes HCCA</div>
+        <h2 style="font-family:'Playfair Display',serif;font-size:clamp(24px,3vw,36px);font-weight:700;color:var(--navy);margin-bottom:18px;">More Than Accountants — Your Financial Partners</h2>
+        <p style="font-size:15.5px;color:var(--text-mid);line-height:1.75;margin-bottom:16px;">What sets Hayes Chartered Certified Accountants apart is our commitment to excellence and integrity. We believe in building long-standing relationships by providing reliable, transparent, and efficient accounting solutions.</p>
+        <p style="font-size:15.5px;color:var(--text-mid);line-height:1.75;margin-bottom:28px;">We are more than just accountants; we are your gateway to financial clarity and success. Trust us to illuminate the financial path ahead and guide you every step of the way.</p>
+        <a href="https://hayes-accountants.co.uk/about-us/" target="_blank" class="btn-primary">Learn About Us</a>
+      </div>
+      <div class="reveal">
+        <div style="background:var(--navy);border-radius:16px;padding:36px;border:1px solid rgba(201,168,76,0.2);">
+          <h3 style="font-family:'Playfair Display',serif;color:var(--gold-light);font-size:20px;margin-bottom:24px;">We Are Accountants For All</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <a href="https://hayes-accountants.co.uk/accountants-for-doctors-in-london/" target="_blank" style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,168,76,0.15);border-radius:8px;padding:12px;color:rgba(255,255,255,0.8);font-size:13.5px;text-decoration:none;transition:all .2s;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold-light)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.15)';this.style.color='rgba(255,255,255,0.8)'">👨‍⚕️ Doctors</a>
+            <a href="https://hayes-accountants.co.uk/real-estate-accounting-services-uk/" target="_blank" style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,168,76,0.15);border-radius:8px;padding:12px;color:rgba(255,255,255,0.8);font-size:13.5px;text-decoration:none;transition:all .2s;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold-light)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.15)';this.style.color='rgba(255,255,255,0.8)'">🏗️ Real Estate</a>
+            <a href="https://hayes-accountants.co.uk/chartered-certified-accountants-in-london/accountants-for-ecommerce/" target="_blank" style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,168,76,0.15);border-radius:8px;padding:12px;color:rgba(255,255,255,0.8);font-size:13.5px;text-decoration:none;transition:all .2s;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold-light)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.15)';this.style.color='rgba(255,255,255,0.8)'">🛒 Ecommerce</a>
+            <a href="https://hayes-accountants.co.uk/cheap-accountants/accountants-for-courier-and-parcel-delivery/" target="_blank" style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,168,76,0.15);border-radius:8px;padding:12px;color:rgba(255,255,255,0.8);font-size:13.5px;text-decoration:none;transition:all .2s;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold-light)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.15)';this.style.color='rgba(255,255,255,0.8)'">🚚 Courier</a>
+            <a href="https://hayes-accountants.co.uk/accountants-for-digital-marketing-agencies-in-london-uk/" target="_blank" style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,168,76,0.15);border-radius:8px;padding:12px;color:rgba(255,255,255,0.8);font-size:13.5px;text-decoration:none;transition:all .2s;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold-light)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.15)';this.style.color='rgba(255,255,255,0.8)'">📱 Digital Agencies</a>
+            <a href="https://hayes-accountants.co.uk/accountants-for-self-employed/" target="_blank" style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,168,76,0.15);border-radius:8px;padding:12px;color:rgba(255,255,255,0.8);font-size:13.5px;text-decoration:none;transition:all .2s;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold-light)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.15)';this.style.color='rgba(255,255,255,0.8)'">💻 Freelancers</a>
+          </div>
+          <a href="https://hayes-accountants.co.uk/chartered-certified-accountants-in-london/" target="_blank" style="display:block;text-align:center;margin-top:20px;color:var(--gold);font-size:13.5px;font-weight:600;text-decoration:none;">See All Client Types →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY CHOOSE US ══ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Why Choose HCCA</div>
+      <h2>Capability, Flexibility & Unwavering Attention to Detail</h2>
+      <p>Eight reasons why thousands of clients across the UK trust Hayes Chartered Certified Accountants.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon">😊</div>
+        <h3>100% Customer Satisfaction</h3>
+        <p>We first understand your needs and then deliver exactly the services you're looking for — no one-size-fits-all approach.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🎓</div>
+        <h3>Expert Certified Staff</h3>
+        <p>A team of 100+ ACCA-certified chartered accountants dedicated to specialist accounting for every situation.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🚫</div>
+        <h3>No Hidden Costs</h3>
+        <p>We work on fixed fees with no commission — you always know exactly what you're paying upfront.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">💰</div>
+        <h3>Budget Friendly Pricing</h3>
+        <p>Affordable rates for startups and small businesses without compromising on quality or expertise.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">📡</div>
+        <h3>Free Monitoring Services</h3>
+        <p>We know the value of follow-ups and account monitoring — included free with all our services.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">⚡</div>
+        <h3>Fast & Reliable Delivery</h3>
+        <p>Authentic, value-added services delivered before HMRC deadlines — always on time.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🤝</div>
+        <h3>Partnership Approach</h3>
+        <p>We act as a reliable financial partner with dedicated account managers — not just a transactional service provider.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🔄</div>
+        <h3>Money Back Guarantee</h3>
+        <p>We're so confident in our work that we offer a money-back guarantee on select accounting services.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ REVIEWS ══ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Client Reviews</div>
+      <h2>5-Star Google Reviews</h2>
+      <p>We take pride in our 5-star Google rating with outstanding feedback from clients across the UK.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">"Great reputation and excellent service. The team are professional, knowledgeable, and always deliver on time. Highly recommended!"</div>
+        <div class="review-author"><div class="avatar">M</div><div><div class="author-name">Muhammad Hassan</div><div class="author-date">Google Review</div></div></div>
+      </div>
+      <div class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">"Exceptional professionalism and attention to detail. Timely, accurate, and reliable financial services make them stand out. Highly recommended!"</div>
+        <div class="review-author"><div class="avatar">A</div><div><div class="author-name">Ammar Ishtiaq</div><div class="author-date">Google Review</div></div></div>
+      </div>
+      <div class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">"Great service from a fantastic team. They take care of everything related to bookkeeping, accounting, and tax obligations. Highly recommendable!"</div>
+        <div class="review-author"><div class="avatar">B</div><div><div class="author-name">Borja Rosales</div><div class="author-date">Google Review</div></div></div>
+      </div>
+      <div class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">"Outstanding experience! Zeeshan provided exceptional, clear, and professional service. Highly recommend for reliable and personalised accounting assistance."</div>
+        <div class="review-author"><div class="avatar">M</div><div><div class="author-name">Marwa Shehata</div><div class="author-date">Google Review</div></div></div>
+      </div>
+      <div class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">"Professional, knowledgeable, accommodating, patient, and on time. High quality advice and documents at a very fair price."</div>
+        <div class="review-author"><div class="avatar">P</div><div><div class="author-name">Paramjit Singh</div><div class="author-date">Google Review</div></div></div>
+      </div>
+      <div class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">"Great service with a caring attitude. When I need them, they are always available. Nothing to complain about their service. Really pleased with them."</div>
+        <div class="review-author"><div class="avatar">J</div><div><div class="author-name">Jin Lee</div><div class="author-date">Google Review</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ HOW IT WORKS ══ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Simple Process</div>
+      <h2>Easy Steps to Get Started with HCCA</h2>
+      <p>We don't want you to waste time — you're busy running your business. Here's how to get connected with us in minutes.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card reveal">
+        <div class="step-circle"><span class="num">1</span></div>
+        <h3>Contact Us</h3>
+        <p>Click on Contact Us or call us directly. You can also WhatsApp us at 07429 584191 for an instant response.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-circle"><span class="num">2</span></div>
+        <h3>Share Your Details</h3>
+        <p>Fill in your name, what service you need, and any relevant details about your business or financial situation.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-circle"><span class="num">3</span></div>
+        <h3>We Handle the Rest</h3>
+        <p>Submit your query and our team gets to work. We'll get back to you promptly with expert advice and next steps.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:44px;">
+      <a href="#contact" class="btn-primary">Get Free 15-Minute Consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">FAQs</div>
+      <h2>Frequently Asked Questions</h2>
+      <p>Everything you need to know about Hayes Chartered Certified Accountants and our services.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">Does Hayes provide online accounting services? <span class="chevron">⌄</span></button>
+        <div class="faq-a">Yes, Hayes Chartered Certified Accountants provides comprehensive online accounting services to meet the diverse needs of individuals and businesses across the UK. Our online solutions are designed to streamline financial processes and offer maximum convenience.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">What accounting services do you offer? <span class="chevron">⌄</span></button>
+        <div class="faq-a">We offer a full range of services including bookkeeping, tax preparation, payroll management, VAT returns, self-assessment, corporation tax, capital gains tax, company formation, registered address services, and much more. <a href="https://hayes-accountants.co.uk/accounting-services/" target="_blank">View all services here.</a></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">Can I receive virtual/online consultations? <span class="chevron">⌄</span></button>
+        <div class="faq-a">Yes, we offer virtual consultations allowing clients to discuss accounting needs, ask questions, and receive personalised advice from our experts without the need for an in-person meeting. <a href="https://hayes-accountants.co.uk/contact-us/" target="_blank">Book a free consultation slot here.</a></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">Are your services suitable for individuals and businesses? <span class="chevron">⌄</span></button>
+        <div class="faq-a">Yes, HCCA tailors its accounting services for both individuals and businesses. Whether you're a sole proprietor, a small business owner, a contractor, or a large corporation — our solutions can be customised to your specific requirements.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">How do I contact Hayes Chartered Certified Accountants? <span class="chevron">⌄</span></button>
+        <div class="faq-a">
+          You can reach us through multiple channels:<br><br>
+          📞 Call: <strong>020 8646 0800</strong><br>
+          💬 WhatsApp: <strong>07429 584191</strong><br>
+          ✉ Email: <strong>info@hayes-accountants.co.uk</strong><br><br>
+          Or <a href="https://hayes-accountants.co.uk/contact-us/" target="_blank">fill out our contact form</a> and we'll get back to you promptly.
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">How much do CIS tax returns cost? <span class="chevron">⌄</span></button>
+        <div class="faq-a">Our CIS personal tax return service is available at a flat rate of just <strong>£39 including VAT</strong>. In most cases we are able to claim a refund on your behalf once the correct tax amount for the year is determined.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="section-tag">Get In Touch</div>
+        <h2>Talk to London's Trusted Accountants</h2>
+        <p>At Hayes Chartered Certified Accountants, enjoy the advantage of direct communication — fostering a personalised and responsive experience for all your financial needs.</p>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div class="contact-item-text">
+            <div class="label">Phone</div>
+            <a href="tel:02086460800">020 8646 0800</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div class="contact-item-text">
+            <div class="label">WhatsApp</div>
+            <a href="https://wa.me/447429584191" target="_blank">07429 584191</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉</div>
+          <div class="contact-item-text">
+            <div class="label">Email</div>
+            <a href="mailto:info@hayes-accountants.co.uk">info@hayes-accountants.co.uk</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-item-text">
+            <div class="label">Address</div>
+            <span>Aquis House, 27-37 Station Road, Hayes UB3 4DX, London UK</span>
+          </div>
+        </div>
+        <div style="margin-top:28px;">
+          <p style="font-size:13px;color:var(--text-light);font-weight:600;text-transform:uppercase;letter-spacing:.8px;margin-bottom:12px;">Follow Us</p>
+          <div style="display:flex;gap:10px;">
+            <a href="https://www.facebook.com/hayesaccountantslondon" target="_blank" title="Facebook" style="width:44px;height:44px;background:var(--navy);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:18px;text-decoration:none;transition:all .2s;" onmouseover="this.style.background='var(--gold)';this.style.color='var(--navy)'" onmouseout="this.style.background='var(--navy)';this.style.color='var(--gold)'">f</a>
+            <a href="https://www.instagram.com/hayesaccountantsltd/" target="_blank" title="Instagram" style="width:44px;height:44px;background:var(--navy);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:18px;text-decoration:none;transition:all .2s;" onmouseover="this.style.background='var(--gold)';this.style.color='var(--navy)'" onmouseout="this.style.background='var(--navy)';this.style.color='var(--gold)'">📸</a>
+            <a href="https://x.com/HayesCCA" target="_blank" title="X / Twitter" style="width:44px;height:44px;background:var(--navy);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:18px;text-decoration:none;transition:all .2s;" onmouseover="this.style.background='var(--gold)';this.style.color='var(--navy)'" onmouseout="this.style.background='var(--navy)';this.style.color='var(--gold)'">𝕏</a>
+            <a href="https://www.linkedin.com/company/hayes-accountants-london" target="_blank" title="LinkedIn" style="width:44px;height:44px;background:var(--navy);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:18px;text-decoration:none;transition:all .2s;" onmouseover="this.style.background='var(--gold)';this.style.color='var(--navy)'" onmouseout="this.style.background='var(--navy)';this.style.color='var(--gold)'">in</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <h3>Send Us a Message</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name *</label>
+            <input type="text" placeholder="John">
+          </div>
+          <div class="form-group">
+            <label>Last Name *</label>
+            <input type="text" placeholder="Smith">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address *</label>
+          <input type="email" placeholder="john@company.com">
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+44 7000 000000">
+        </div>
+        <div class="form-group">
+          <label>Service Required</label>
+          <select>
+            <option value="">— Select a Service —</option>
+            <option>Self-Assessment Tax Return</option>
+            <option>VAT Return</option>
+            <option>Payroll Services</option>
+            <option>Corporation Tax</option>
+            <option>Bookkeeping & Accounting</option>
+            <option>Company Formation</option>
+            <option>Tax Advisory</option>
+            <option>CIS Tax Returns</option>
+            <option>Capital Gains Tax</option>
+            <option>Landlord Taxation</option>
+            <option>Making Tax Digital</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell us about your accounting needs..."></textarea>
+        </div>
+        <button class="form-submit" onclick="submitForm(this)">Send Message & Get Free Consultation</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ACCREDITATIONS ══ -->
+<div class="accreditations">
+  <div class="accreditations-inner">
+    <h4>Our Partners & Accreditations</h4>
+    <div class="badges">
+      <div class="badge">ACCA Certified</div>
+      <div class="badge">QuickBooks</div>
+      <div class="badge">Xero</div>
+      <div class="badge">Zoho</div>
+      <div class="badge">BTC Software</div>
+      <div class="badge">TaxWise</div>
+      <div class="badge">Peninsula</div>
+      <div class="badge">Companies House</div>
+      <div class="badge">HMRC</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ LOCATIONS ══ -->
+<div class="locations">
+  <div class="locations-inner">
+    <h4>We Provide Online Accounting Services Throughout the UK</h4>
+    <div class="location-tags">
+      <a href="https://hayes-accountants.co.uk/cheap-accountants/brighton-hove/" target="_blank">Brighton & Hove</a>
+      <span class="sep">·</span>
+      <a href="https://hayes-accountants.co.uk/cheap-accountants/southampton/" target="_blank">Southampton</a>
+      <span class="sep">·</span>
+      <a href="https://hayes-accountants.co.uk/cheap-accountants/tax-accountant-bristol/" target="_blank">Bristol</a>
+      <span class="sep">·</span>
+      <a href="https://hayes-accountants.co.uk/accountants-in-exeter/" target="_blank">Exeter</a>
+      <span class="sep">·</span>
+      <a href="https://hayes-accountants.co.uk/cheap-accountants/accountants-manchester/" target="_blank">Manchester</a>
+      <span class="sep">·</span>
+      <a href="https://hayes-accountants.co.uk/cheap-accountants/" target="_blank">London</a>
+      <span class="sep">·</span>
+      <span style="color:rgba(255,255,255,0.5)">And across the UK</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="logo" style="margin-bottom:16px;display:inline-flex;">
+        <div class="logo-mark"></div>
+        <div class="logo-text">
+          <span class="name" style="color:var(--white)">Hayes Accountants</span>
+          <span class="tagline">Chartered Certified · Tax Consultants</span>
+        </div>
+      </a>
+      <p>Welcome to Hayes Chartered Certified Accountants and Tax Consultants — where precision meets prosperity in the world of finance.</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/hayesaccountantslondon" class="social-link" target="_blank" title="Facebook">f</a>
+        <a href="https://www.instagram.com/hayesaccountantsltd/" class="social-link" target="_blank" title="Instagram">📸</a>
+        <a href="https://x.com/HayesCCA" class="social-link" target="_blank" title="X / Twitter">𝕏</a>
+        <a href="https://www.linkedin.com/company/hayes-accountants-london" class="social-link" target="_blank" title="LinkedIn">in</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="https://hayes-accountants.co.uk/about-us/" target="_blank">About Us</a></li>
+        <li><a href="https://hayes-accountants.co.uk/careers-accountant-jobs-in-uk/" target="_blank">Careers</a></li>
+        <li><a href="https://hayes-accountants.co.uk/blogs/" target="_blank">Blogs</a></li>
+        <li><a href="https://hayes-accountants.co.uk/privacy-policy/" target="_blank">Privacy Policy</a></li>
+        <li><a href="https://hayes-accountants.co.uk/chartered-certified-accountants-in-london/" target="_blank">Chartered Certified Accountants London</a></li>
+        <li><a href="https://hayes-accountants.co.uk/cheap-accountants/" target="_blank">Cheap Accountants in London</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Who We Help</h4>
+      <ul>
+        <li><a href="https://hayes-accountants.co.uk/accountants-for-individuals/" target="_blank">Individuals</a></li>
+        <li><a href="https://hayes-accountants.co.uk/accountants-for-self-employed/" target="_blank">Self-Employed</a></li>
+        <li><a href="https://hayes-accountants.co.uk/accountants-for-landlords/" target="_blank">Landlords</a></li>
+        <li><a href="https://hayes-accountants.co.uk/accountants-for-investors/" target="_blank">Investors</a></li>
+        <li><a href="https://hayes-accountants.co.uk/accountants-for-high-net-worth-individual/" target="_blank">High Net Worth</a></li>
+        <li><a href="https://hayes-accountants.co.uk/accountants-for-limited-company/" target="_blank">Limited Companies</a></li>
+        <li><a href="https://hayes-accountants.co.uk/accountants-for-small-business/" target="_blank">Small Business</a></li>
+        <li><a href="https://hayes-accountants.co.uk/startup-accountants/" target="_blank">Startups</a></li>
+        <li><a href="https://hayes-accountants.co.uk/contractor-accountants/" target="_blank">Contractors</a></li>
+        <li><a href="https://hayes-accountants.co.uk/accountants-for-doctors-in-london/" target="_blank">Doctors</a></li>
+        <li><a href="https://hayes-accountants.co.uk/real-estate-accounting-services-uk/" target="_blank">Real Estate</a></li>
+        <li><a href="https://hayes-accountants.co.uk/accountants-for-restaurants-and-tax-consultants/" target="_blank">Restaurants</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="https://hayes-accountants.co.uk/accounting-and-bookkeeping-services/" target="_blank">Bookkeeping</a></li>
+        <li><a href="https://hayes-accountants.co.uk/vat-return-services-in-uk/" target="_blank">VAT Return</a></li>
+        <li><a href="https://hayes-accountants.co.uk/payroll-service/" target="_blank">Payroll</a></li>
+        <li><a href="https://hayes-accountants.co.uk/self-assessment-tax-return-services/" target="_blank">Self-Assessment</a></li>
+        <li><a href="https://hayes-accountants.co.uk/corporation-tax-accounting-services/" target="_blank">Corporation Tax</a></li>
+        <li><a href="https://hayes-accountants.co.uk/capital-gains-tax-accounting-services/" target="_blank">Capital Gains Tax</a></li>
+        <li><a href="https://hayes-accountants.co.uk/tax-advisors-in-uk-tax-advisory/" target="_blank">Tax Advisory</a></li>
+        <li><a href="https://hayes-accountants.co.uk/company-formation-services/" target="_blank">Company Formation</a></li>
+        <li><a href="https://hayes-accountants.co.uk/landlord-taxation-landlord-accountants/" target="_blank">Landlord Taxation</a></li>
+        <li><a href="https://hayes-accountants.co.uk/construction-industry-scheme-personals-cis-tax-returns/" target="_blank">CIS Tax Returns</a></li>
+        <li><a href="https://hayes-accountants.co.uk/tax-rebate-tax-refund-services/" target="_blank">Tax Rebate</a></li>
+        <li><a href="https://hayes-accountants.co.uk/accounting-services/making-tax-digital-mtd-accountants/" target="_blank">Making Tax Digital</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Hayes Chartered Certified Accountants and Tax Consultants. All rights reserved.</p>
+    <p><a href="https://hayes-accountants.co.uk/privacy-policy/" target="_blank">Privacy Policy</a> · <a href="https://hayes-accountants.co.uk/contact-us/" target="_blank">Contact Us</a></p>
+  </div>
+</footer>
+
+<script>
+// Mobile menu
+function openMenu() { document.getElementById('mobileMenu').classList.add('open'); document.body.style.overflow='hidden'; }
+function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); document.body.style.overflow=''; }
+
+// FAQ accordion
+function toggleFaq(btn) {
+  const answer = btn.nextElementSibling;
+  const isOpen = btn.classList.contains('open');
+  document.querySelectorAll('.faq-q').forEach(b => { b.classList.remove('open'); b.nextElementSibling.style.display='none'; });
+  if (!isOpen) { btn.classList.add('open'); answer.style.display='block'; }
+}
+
+// Contact form
+function submitForm(btn) {
+  btn.textContent = '✓ Message Sent! We\'ll be in touch shortly.';
+  btn.style.background = 'var(--green)';
+  btn.disabled = true;
+  setTimeout(() => { btn.textContent = 'Send Message & Get Free Consultation'; btn.style.background = ''; btn.disabled = false; }, 4000);
+}
+
+// Scroll reveal
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 60);
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+revealEls.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
